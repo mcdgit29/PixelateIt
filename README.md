@@ -14,8 +14,9 @@ Original Image
 Pixilated Image
 <img src="tests/resources/JEdgarBuilding__pixelated__.jpg" alt="Alt Text" width="100" height="100">
 
-### Optional Json Results writen
-keys are the index of each point, values are tuple with the row, column for each non-white pixel
+### Optional Json Results
+Using the --json flag, a file is created of the pixals used to created the pixaleted image. 
+Keys are the index of each point, values are tuple with the row, column for each non-white pixel
 ```
 {0: (1, 0), 1: (1, 1), 2: (1, 2), ...}
 ```
