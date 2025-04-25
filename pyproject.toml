@@ -16,7 +16,7 @@ dependencies = [
 [tool.setuptools]
 package-dir = {"" = "Pi"}
 
-tool.setuptools.packages.find]
+[tool.setuptools.packages.find]
 where = ["."]
 
 [build-system]
