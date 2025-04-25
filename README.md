@@ -1,6 +1,7 @@
 
 # PixilateIt
-A program to transform images into json data files of binary points
+A program to transform images into json data files of binary points.
+This package's intended use is to take a hand drawn image on a white background and extract the pixels of the drawing into an arbitrary re-sized image
 
 Original Image
 ![image info](./test/resources/JEdgarBuilding.jpg)
