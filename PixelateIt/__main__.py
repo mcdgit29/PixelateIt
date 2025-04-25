@@ -79,7 +79,3 @@ def main():
     print(d)
     print(f"Image Size: {s} Number of Points: {len(points)}")
     print(f"output written to: {Path(output_path).absolute()}")
-
-
-if __name__ == "__main__":
-    main()

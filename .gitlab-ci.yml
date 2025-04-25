@@ -18,4 +18,4 @@ quality-checks:
   stage: tests
   image: python:3.11-alpine
   script:
-    - poetry run pytest tests/tests.py
+    - poetry run pytest
