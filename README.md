@@ -8,7 +8,7 @@ This is a demo project, has no warranty, is not supported and generally only exi
 
 
 Original Image
-<img src="tests/resources/JEdgarBuilding.jpg" alt="Alt Text" width="200" height="100" style="transform: rotate(90deg);">
+<img src="tests/resources/JEdgarBuilding.jpg" alt="Alt Text" width="150" height="100">
 
 
 Pixilated Image
