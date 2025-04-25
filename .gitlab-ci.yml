@@ -9,7 +9,7 @@ stages:
 
 pre-commit:
   stage: lint
-  image: python:3.12-alpine
+  image: python:3.11-alpine
   script:
     - apk add git
     - poetry run pre-commit run --all-files
