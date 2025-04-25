@@ -40,4 +40,4 @@ writes results by default to results.json in directory where program is launched
 
 
 ### Testing
-use tox
+use tox in shell
