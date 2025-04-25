@@ -6,9 +6,10 @@ Original Image
 ![image info](./test/resources/JEdgarBuilding.jpg)
 
 Pixilated Image
-![image info](.test/resources/pixalated_image.png)
+![image info](.test/resources/JEdgarBuilding__pixelated__.jpg)
 
-Json Results
+Optional Json Results writen
+keys are the index of each point, values are tuple with the row, column for each non-white pixel
 ```
 {0: (1, 0), 1: (1, 1), 2: (1, 2), ...}
 ```
@@ -17,4 +18,11 @@ Running the Program
 ```shell
 python PixelateIt test//resources//JEdgarBuilding.jpg --s 10 10 --r 90
 ```
+
+#### Options
+
 writes results by default to results.json in directory where program is launched
++ Use --json flag to write json results
++ -s int, int defines the resizing of the image.
++ -r int, defines degree of rotation of the image.
++ -t defines the threshold to binerize, automatically defected if left blank. between 0-254, smaller number means results in more pixels
