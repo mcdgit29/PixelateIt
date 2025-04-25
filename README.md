@@ -4,10 +4,10 @@ A program to transform images into json data files of binary points.
 This package's intended use is to take a hand drawn image on a white background and extract the pixels of the drawing into an arbitrary re-sized image
 
 Original Image
-![image info](./test/resources/JEdgarBuilding.jpg)
+![image info](tests/resources/JEdgarBuilding.jpg){ width=20% }
 
 Pixilated Image
-![image info](./test/resources/JEdgarBuilding__pixelated__.jpg)
+![image info](tests/resources/JEdgarBuilding__pixelated__.jpg)
 
 Optional Json Results writen
 keys are the index of each point, values are tuple with the row, column for each non-white pixel
@@ -17,7 +17,7 @@ keys are the index of each point, values are tuple with the row, column for each
 
 Running the Program
 ```shell
-python PixelateIt test//resources//JEdgarBuilding.jpg --s 10 10 --r 90
+python PixelateIt tests//resources//JEdgarBuilding.jpg --s 10 10 --r 90
 ```
 
 #### Options

@@ -5,7 +5,7 @@ before_script:
 
 stages:
   - lint
-  - test
+  - tests
 
 pre-commit:
   stage: lint
@@ -15,7 +15,7 @@ pre-commit:
     - poetry run pre-commit run --all-files
 
 quality-checks:
-  stage: test
+  stage: tests
   image: python:3.11-alpine
   script:
-    - poetry run pytest test/test.py
+    - poetry run pytest tests/tests.py
