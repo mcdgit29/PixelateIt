@@ -14,10 +14,10 @@ dependencies = [
     "scikit-learn (>=1.6.1,<2.0.0)"
 ]
 [tool.setuptools]
-package-dir = {"" = "src"}
+package-dir = {"" = "Pi"}
 
-[tool.setuptools.packages.find]
-where = ["src"]
+tool.setuptools.packages.find]
+where = ["."]
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
