@@ -7,7 +7,7 @@ Original Image
 ![image info](./test/resources/JEdgarBuilding.jpg)
 
 Pixilated Image
-![image info](.test/resources/JEdgarBuilding__pixelated__.jpg)
+![image info](./test/resources/JEdgarBuilding__pixelated__.jpg)
 
 Optional Json Results writen
 keys are the index of each point, values are tuple with the row, column for each non-white pixel
