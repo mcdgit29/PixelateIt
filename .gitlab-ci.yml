@@ -1,0 +1,21 @@
+before_script:
+ - pip install poetry
+ - poetry install --with development
+ - source `poetry env info --path`/bin/activate
+
+stages:
+  - lint
+  - test
+
+pre-commit:
+  stage: lint
+  image: python:3.12-alpine
+  script:
+    - apk add git
+    - poetry run pre-commit run --all-files
+
+quality-checks:
+  stage: test
+  image: python:3.11-alpine
+  script:
+    - poetry run pytest test/test.py
