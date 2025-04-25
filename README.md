@@ -22,22 +22,22 @@ keys are the index of each point, values are tuple with the row, column for each
 Installation (using python 3.11), recommended installation into a virtual environment.
 + Clone the repository
 + cd into the PixilateIt with the poetry.toml fill
-+ pip install.
-
-```shell
-
-```
++ pip install .
 
 
-Usage in the command line
+## Usage in the command line
 ```shell
 python PixelateIt tests//resources//JEdgarBuilding.jpg --s 10 10 --r 90
 ```
 
-#### Options
+### Options
 
 writes results by default to results.json in directory where program is launched
 + Use --json flag to write json results
 + -s int, int defines the resizing of the image.
 + -r int, defines degree of rotation of the image.
 + -t defines the threshold to binerize, automatically defected if left blank. between 0-254, smaller number means results in more pixels
+
+
+### Testing
+use tox
