@@ -22,12 +22,19 @@ Keys are the index of each point, values are tuple with the row, column for each
 ```
 
 Installation (using python 3.11), recommended installation into a virtual environment.
+Requires Python 3.11 (may or may not work in other environments)
 + Clone the repository
-+ cd into the PixilateIt with the poetry.toml fill
-+ pip install .
-
+  ```shell
+  git clone git@github.com:mcdgit29/PixelateIt.git
+  ```
++ cd into the PixilateIt directory that contains the poetry.toml file
++ install with pip
+ ```shell
+  pip install .
+```
 
 ## Usage in the command line
+this example shows resizing the image to 10 x 10 and rotating it 90 degrees and uses the automatic detection of the threshold for bininarization. 
 ```shell
 python PixelateIt tests//resources//JEdgarBuilding.jpg --s 10 10 --r 90
 ```
@@ -35,7 +42,7 @@ python PixelateIt tests//resources//JEdgarBuilding.jpg --s 10 10 --r 90
 ### Options
 
 writes results by default to results.json in directory where program is launched
-+ Use --json flag to write json results
++ Use --json flag to write json results (key is the index of points, value is a tuple with the row and column of the point)
 + -s int, int defines the resizing of the image.
 + -r int, defines degree of rotation of the image.
 + -t defines the threshold to binerize, automatically defected if left blank. between 0-254, smaller number means results in more pixels
